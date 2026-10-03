@@ -1,0 +1,186 @@
+/* ==============================
+   NAVBAR ENTRY ANIMATION
+================================ */
+
+
+.navbar{
+
+    animation: navbarEntry 1s ease;
+
+}
+
+
+
+@keyframes navbarEntry{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==============================
+   PROFILE IMAGE ANIMATION
+================================ */
+
+
+.hero-image img{
+
+    animation:
+    profileEntry 1.2s ease,
+    floating 4s ease-in-out infinite;
+
+}
+
+
+
+@keyframes profileEntry{
+
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.5);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+@keyframes floating{
+
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==============================
+   SECTION SCROLL ANIMATION
+================================ */
+
+
+.animate-section{
+
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:
+
+    opacity .8s ease,
+
+    transform .8s ease;
+
+
+}
+
+
+
+.animate-section.show{
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+
+}
+
+
+
+
+/* ==============================
+   CARD SCROLL ANIMATION
+================================ */
+
+
+.animate-card{
+
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.7s ease;
+
+
+}
+
+
+
+.animate-card.show{
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+
+}
+
+
+
+/* ==============================
+   BUTTON GLOW
+================================ */
+
+
+.btn:hover,
+.project-buttons a:hover{
+
+
+    box-shadow:
+
+    0 0 15px #00ffff,
+
+    0 0 30px rgba(0,255,255,.5);
+
+
+}

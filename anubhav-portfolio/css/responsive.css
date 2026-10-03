@@ -1,0 +1,310 @@
+/* ==============================
+   TABLET RESPONSIVE
+================================ */
+
+@media(max-width:900px){
+
+
+    /* HERO */
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:40px;
+
+        padding:60px 5%;
+
+    }
+
+
+    .hero-text{
+
+        max-width:100%;
+
+    }
+
+
+    .hero-image img{
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+
+
+    /* NAVBAR */
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+
+    /* SKILLS */
+
+    .skills-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+    /* PROJECTS */
+
+    .project-container{
+
+        justify-content:center;
+
+    }
+
+
+}
+
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media(max-width:600px){
+
+
+    /* NAVBAR */
+
+    .navbar{
+
+        padding:20px 5%;
+
+    }
+
+
+    .nav-links{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+
+    }
+
+
+
+    /* HERO */
+
+    .hero{
+
+        padding:50px 5%;
+
+    }
+
+
+    .hero-image img{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+
+    .hero-text h1{
+
+        font-size:28px;
+
+    }
+
+
+    .hero-text p{
+
+        font-size:15px;
+
+    }
+
+
+
+    /* SECTIONS */
+
+    .section,
+    .about,
+    .skills{
+
+        padding:60px 5%;
+
+    }
+
+
+
+    /* SKILLS */
+
+    .skills-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .skill-card{
+
+        padding:20px;
+
+    }
+
+
+
+    /* PROJECT CARD */
+
+    .project-card{
+
+        width:100%;
+
+    }
+
+
+
+    /* CERTIFICATES */
+
+    .certificate-container{
+
+        flex-direction:column;
+
+    }
+
+
+}
+
+
+
+/* ==============================
+   SMALL MOBILE
+================================ */
+
+@media(max-width:400px){
+
+
+    .hero-image img{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+
+    .hero-text h1{
+
+        font-size:24px;
+
+    }
+
+
+    .btn{
+
+        padding:10px 20px;
+
+        font-size:14px;
+
+    }
+
+
+}
+
+@media(max-width:1100px){
+
+.project-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:700px){
+
+.project-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+
+@media(max-width:900px){
+
+
+    .hero {
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:40px;
+
+    }
+
+
+    .skills-container {
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .nav-links {
+
+        gap:15px;
+
+    }
+
+
+    .skills-container {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .hero-image img {
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+
+}
+

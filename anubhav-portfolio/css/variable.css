@@ -1,0 +1,67 @@
+/* ==============================
+   ROOT VARIABLES
+================================ */
+
+:root {
+
+    /* Primary Theme Colors */
+
+    --primary-color:#2563eb;
+
+    --secondary-color:#00ffff;
+
+    --accent-color:#7c3aed;
+
+
+    /* Background Colors */
+
+    --background:#0f172a;
+
+    --surface-color:#08111f;
+
+    --card-color:#1e293b;
+
+
+    /* Text Colors */
+
+    --text-color:#ffffff;
+
+    --muted-text:#94a3b8;
+
+
+    /* Border & Effects */
+
+    --border-color:rgba(0,255,255,0.3);
+
+    --glass-bg:rgba(255,255,255,0.05);
+
+
+    /* Shadows */
+
+    --box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+
+
+    --glow-shadow:
+    0 10px 25px rgba(37,99,235,0.4);
+
+
+    /* Border Radius */
+
+    --radius-small:10px;
+
+    --radius-medium:15px;
+
+    --radius-large:25px;
+
+
+    /* Spacing */
+
+    --section-padding:80px 10%;
+
+
+    /* Font */
+
+    --font-main:Arial, sans-serif;
+
+}
