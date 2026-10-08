@@ -1,6 +1,6 @@
 # 🚀 Anubhav Kumar - Developer Portfolio
 
-![Portfolio Banner](<img width="1887" height="867" alt="image" src="https://github.com/user-attachments/assets/d3bcc210-6654-4520-9323-4c4ed8978318" />
+![Portfolio Banner]([<img width="1887" height="867" alt="image" src="https://github.com/user-attachments/assets/d3bcc210-6654-4520-9323-4c4ed8978318" />](https://github.com/Anubhavkr0007/Portfolio/blob/main/anubhav-portfolio/assets/projects/Screenshot%202026-10-03%20150936.png)
 )
 
 ## 👨‍💻 About The Project
