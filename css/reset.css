@@ -1,0 +1,64 @@
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html {
+
+    scroll-behavior:smooth;
+
+    font-size:16px;
+
+}
+
+
+body {
+
+    min-height:100vh;
+
+    font-family:Arial, sans-serif;
+
+    line-height:1.5;
+
+}
+
+
+img {
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+a {
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+button,
+input,
+textarea {
+
+    font-family:inherit;
+
+}
+
+
+ul,
+ol {
+
+    list-style:none;
+
+}
