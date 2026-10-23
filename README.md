@@ -1,6 +1,6 @@
 # Portfolio# 🚀 Anubhav Kumar - Developer Portfolio
 
-![Image](https://github.com/Anubhavkr0007/Portfolio/blob/main/anubhav-portfolio/assets/projects/Preview.png)
+![Image](https://github.com/Anubhavkr0007/Portfolio/blob/main/assets/projects/Preview.png)
 
 ## 👨‍💻 About The Project
 
