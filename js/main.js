@@ -25,3 +25,36 @@ if ("IntersectionObserver" in window) {
             observer.observe(card);
         });
 }
+
+const enquiryTrigger = document.querySelector(".enquiry-trigger");
+const contactModal = document.getElementById("contactModal");
+const modalClose = document.querySelector(".modal-close");
+const modalBackdrop = document.querySelector(".contact-modal-backdrop");
+
+if (enquiryTrigger && contactModal) {
+    const openModal = () => {
+        contactModal.classList.add("is-open");
+        contactModal.setAttribute("aria-hidden", "false");
+    };
+
+    const closeModal = () => {
+        contactModal.classList.remove("is-open");
+        contactModal.setAttribute("aria-hidden", "true");
+    };
+
+    enquiryTrigger.addEventListener("click", openModal);
+
+    if (modalClose) {
+        modalClose.addEventListener("click", closeModal);
+    }
+
+    if (modalBackdrop) {
+        modalBackdrop.addEventListener("click", closeModal);
+    }
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && contactModal.classList.contains("is-open")) {
+            closeModal();
+        }
+    });
+}
