@@ -30,6 +30,9 @@ const enquiryTrigger = document.querySelector(".enquiry-trigger");
 const contactModal = document.getElementById("contactModal");
 const modalClose = document.querySelector(".modal-close");
 const modalBackdrop = document.querySelector(".contact-modal-backdrop");
+const contactForm = document.getElementById("contactForm");
+const contactFormStatus = document.getElementById("contactFormStatus");
+
 
 if (enquiryTrigger && contactModal) {
     const openModal = () => {
@@ -55,6 +58,29 @@ if (enquiryTrigger && contactModal) {
     document.addEventListener("keydown", event => {
         if (event.key === "Escape" && contactModal.classList.contains("is-open")) {
             closeModal();
+        }
+    });
+}
+if (contactForm) {
+    contactForm.addEventListener("submit", event => {
+        event.preventDefault();
+
+        if (!contactForm.reportValidity()) {
+            return;
+        }
+
+        const formData = new FormData(contactForm);
+        const name = String(formData.get("name") || "").trim();
+        const email = String(formData.get("email") || "").trim();
+        const message = String(formData.get("message") || "").trim();
+        const subject = `Portfolio enquiry from ${name}`;
+        const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+        const mailtoUrl = `mailto:anubhavkumar2607@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoUrl;
+
+        if (contactFormStatus) {
+            contactFormStatus.textContent = "Your email app is opening.";
         }
     });
 }
