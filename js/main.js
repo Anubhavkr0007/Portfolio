@@ -69,18 +69,19 @@ if (contactForm) {
             return;
         }
 
-        const formData = new FormData(contactForm);
+          const formData = new FormData(contactForm);
         const name = String(formData.get("name") || "").trim();
         const email = String(formData.get("email") || "").trim();
         const message = String(formData.get("message") || "").trim();
         const subject = `Portfolio enquiry from ${name}`;
         const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-        const mailtoUrl = `mailto:anubhavkumar2607@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=anubhavkumar2607@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-        window.location.href = mailtoUrl;
+        window.open(gmailUrl, "_blank", "noopener,noreferrer");
 
         if (contactFormStatus) {
-            contactFormStatus.textContent = "Your email app is opening.";
+            contactFormStatus.textContent = "Gmail is opening in a new browser tab.";
         }
     });
 }
+
