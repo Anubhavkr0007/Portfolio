@@ -14,13 +14,31 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+        <style>
+        #pageLoader {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #050505;
+        }
+
+        #pageLoader img {
+            width: min(42vw, 220px);
+            max-height: 120px;
+            object-fit: contain;
+        }
+    </style>
+
 </head>
 
 <body>
+   
     <div class="page-loader" id="pageLoader" role="status" aria-label="Loading portfolio">
-        <img src="assets/profile/portfolio-logo.png" alt="Anubhav Kumar logo">
+        <img src="assets/profile/portfolio-logo.png" alt="" aria-hidden="true">
     </div>
-
     <!-- Navbar -->
     <header>
         <nav class="navbar">
