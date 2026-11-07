@@ -22,7 +22,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #050505;
+             background: rgba(20, 14, 93, 0.863);
         }
 
         #pageLoader img {
@@ -30,7 +30,9 @@
             max-height: 120px;
             object-fit: contain;
             filter: brightness(0) invert(1);
-            animation: loaderPulse 1.4s ease-in-out infinite;
+            transform-origin: center;
+            opacity: 0;
+            animation: loaderZoom 1.4s ease-in-out infinite;
         }
     </style>
 
