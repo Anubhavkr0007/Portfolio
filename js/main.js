@@ -1,4 +1,5 @@
 "use strict";
+
 const pageLoader = document.getElementById("pageLoader");
 
 if (pageLoader) {
@@ -49,7 +50,6 @@ const modalBackdrop = document.querySelector(".contact-modal-backdrop");
 const contactForm = document.getElementById("contactForm");
 const contactFormStatus = document.getElementById("contactFormStatus");
 
-
 if (enquiryTrigger && contactModal) {
     const openModal = () => {
         contactModal.classList.add("is-open");
@@ -77,6 +77,7 @@ if (enquiryTrigger && contactModal) {
         }
     });
 }
+
 if (contactForm) {
     contactForm.addEventListener("submit", event => {
         event.preventDefault();
@@ -85,7 +86,7 @@ if (contactForm) {
             return;
         }
 
-          const formData = new FormData(contactForm);
+        const formData = new FormData(contactForm);
         const name = String(formData.get("name") || "").trim();
         const email = String(formData.get("email") || "").trim();
         const message = String(formData.get("message") || "").trim();
@@ -100,4 +101,3 @@ if (contactForm) {
         }
     });
 }
-
