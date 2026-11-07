@@ -8,10 +8,10 @@ if (pageLoader) {
     };
 
     if (document.readyState === "complete") {
-        window.setTimeout(hidePageLoader, 650);
+        window.setTimeout(hidePageLoader, 1200);
     } else {
         window.addEventListener("load", () => {
-            window.setTimeout(hidePageLoader, 650);
+            window.setTimeout(hidePageLoader, 1200);
         }, { once: true });
     }
 }
