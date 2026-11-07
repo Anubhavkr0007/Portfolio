@@ -41,16 +41,27 @@ body {
 
 }
 
-@keyframes loaderPulse {
 
-    0%, 100% {
-        opacity:.6;
-        transform:scale(.96);
+@keyframes loaderZoom {
+
+    0% {
+        opacity:0;
+        transform:scale(.7);
     }
 
-    50% {
+    25% {
+        opacity:.6;
+        transform:scale(.9);
+    }
+
+    55% {
         opacity:1;
-        transform:scale(1);
+        transform:scale(1.08);
+    }
+
+    100% {
+        opacity:.85;
+        transform:scale(1.02);
     }
 
 }
