@@ -1,4 +1,20 @@
 "use strict";
+const pageLoader = document.getElementById("pageLoader");
+
+if (pageLoader) {
+    const hidePageLoader = () => {
+        pageLoader.classList.add("is-hidden");
+        pageLoader.setAttribute("aria-hidden", "true");
+    };
+
+    if (document.readyState === "complete") {
+        window.setTimeout(hidePageLoader, 650);
+    } else {
+        window.addEventListener("load", () => {
+            window.setTimeout(hidePageLoader, 650);
+        }, { once: true });
+    }
+}
 
 if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
