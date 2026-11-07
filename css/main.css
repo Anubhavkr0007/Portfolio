@@ -11,6 +11,52 @@ body {
 }
 
 
+.page-loader {
+
+    position:fixed;
+    inset:0;
+    z-index:2000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#050505;
+    transition:opacity .45s ease, visibility .45s ease;
+
+}
+
+.page-loader img {
+
+    width:min(42vw, 220px);
+    max-height:120px;
+    object-fit:contain;
+    filter:brightness(0) invert(1);
+    animation:loaderPulse 1.4s ease-in-out infinite;
+
+}
+
+.page-loader.is-hidden {
+
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+
+}
+
+@keyframes loaderPulse {
+
+    0%, 100% {
+        opacity:.6;
+        transform:scale(.96);
+    }
+
+    50% {
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+
 html {
 
     scroll-behavior: smooth;
